@@ -22,7 +22,7 @@ var generatePassword = function(){
   allChars += numbers;
   var lengthPassword = Number(window.prompt("How many characters would you like your password to be?"));
   
-  if(lengthPassword < 8 || lengthPassword > 128){
+  while(lengthPassword < 8 || lengthPassword > 128){
     var lengthPassword = Number(window.prompt("Please choose a proper length!"));
   }
   var confirmLower = window.confirm("Would you like to add lowercase characters?");
